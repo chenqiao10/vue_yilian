@@ -1,0 +1,121 @@
+.head-nav{
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	background-color: #169cd4;
+}
+.head-nav a{
+	color: #fff;
+	margin-left: 850px;
+}
+h1{
+	margin-left: 630px;
+}
+.red{
+	color: red;
+}
+.tab{
+	float: left;
+}
+.geren{
+	padding-left: 34px;
+}
+.qiye{
+	margin-left: 144px;
+}
+.tab .tab-nav{
+	height: 50px;
+}
+.tab .tab-nav li{
+	float: left;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+.tab-nav .geren{
+	margin-left: 500px;
+}
+.tab .tab-nav li a{
+	float: left;
+	display: block;
+	color: #000;
+}
+.tab .tab-nav li.actived{
+	background: #fff;
+}
+.content-item{
+	float: left;
+	width: 480px;
+	height: 400px;
+	margin-top: 10px;
+	margin-left: 460px;
+}
+.forget{
+	margin-left: 100px;
+}
+.anniu{
+	color: #fff;
+	border-radius: 5px;
+	background-color: #169cd4;
+}
+.content-item input{
+	width: 350px;
+	height: 40px;
+	border: 1px solid #ccc;
+	margin-top: 22px;
+}
+.content-item .picture{
+	float: left;
+	width: 258px;
+	height: 44px;
+	margin-left: 64px;
+}
+.content-item img{
+	float: left;
+	height: 44px;
+	margin-top: 22px;
+
+}
+.content-item  .yanzhengma{
+	width: 268px;
+	height: 44px;
+	margin-left: -8px;
+}
+.huoqu{
+	background-color: #ccc;
+	height: 44px;
+}
+.yanzhengma{
+	margin-top: 30px;
+}
+.content-item .check{
+	width: 15px;
+	height: 15px;
+	margin-left: -4px;
+}
+.content-item span{
+	margin-left: 60px;
+}
+.tab .content-wrap p{
+	margin-top: 15px;
+}
+.tab .content-wrap .content-item{
+	position: absolute;
+	display: none;
+	text-align: center;
+}
+.tab .content-wrap .current{
+	display: block;
+}
+.footer{
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 540px;
+}
+.copy{
+	float: left;
+	color: #ccc;
+	font-size: 12px;
+	margin-left: 580px;
+}

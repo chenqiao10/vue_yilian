@@ -1,0 +1,73 @@
+.head-nav{
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	background-color: #169cd4;
+}
+.head-nav a{
+	color: #fff;
+	margin-left: 850px;
+}
+.red{
+	color: red;
+}
+.tab{
+	float: left;
+}
+.zhanghu{
+	padding-left: 34px;
+}
+.duanxin{
+	margin-left: 144px;
+}
+.tab .tab-nav{
+	height: 50px;
+}
+.tab .tab-nav li{
+	float: left;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+.tab-nav .zhanghu{
+	margin-left: 500px;
+}
+.tab .tab-nav li a{
+	float: left;
+	display: block;
+	color: #000;
+}
+.tab .tab-nav li.actived{
+	background: #fff;
+}
+.content-item{
+	float: left;
+	width: 480px;
+	height: 350px;
+	margin-top: 20px;
+	margin-left: 460px;
+}
+.forget{
+	margin-left: 100px;
+}
+.anniu{
+	color: #fff;
+	border-radius: 5px;
+	background-color: #169cd4;
+}
+.content-item input{
+	width: 350px;
+	height: 40px;
+	border: 1px solid #ccc;
+	margin-top: 22px;
+}
+.tab .content-wrap p{
+	margin-top: 20px;
+}
+.tab .content-wrap .content-item{
+	position: absolute;
+	display: none;
+	text-align: center;
+}
+.tab .content-wrap .current{
+	display: block;
+}

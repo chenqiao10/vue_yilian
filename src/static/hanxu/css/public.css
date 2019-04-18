@@ -1,0 +1,64 @@
+*{margin:0;padding:0; font-size:14px; color:#0d0d0d;}
+html{-webkit-text-size-adjust:100%}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul,li{list-style:none}
+a{text-decoration:none;color:inherit; color:#0d0d0d;}
+a:hover{color:inherit}
+img{max-width:100%; display:block}
+table{border-collapse:collapse;border-spacing:0}
+button,input,select,textarea{font:inherit;color:inherit;outline:0}
+button,input[type=button],input[type=checkbox],input[type=radio],input[type=reset],input[type=submit],select{-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer}
+select::-ms-expand{display:none}
+input:focus,textarea:focus{outline:0}
+input::-ms-clear{display:none}
+.fix,.wp{*zoom:1}
+.fix:after,.fix:before,.wp:after,.wp:before{display:block;content:"clear";height:0;clear:both;overflow:hidden;visibility:hidden}
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+li{ list-style: none;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+.clear{ clear:both; height:0;}
+
+.fl{ float:left}
+.fr{ float:right}
+.over{ overflow:hidden}
+.content{ width: 1200px; margin: 0 auto;}
+/*头部样式*/
+header{ height:68px; box-shadow:0 0 10px rgba(0,0,0,0.15)}
+.logo{ padding: 16px 0}
+
+/*底部样式*/
+.copyright{ background:#0d0d0d;}
+.copyright p{ line-height:50px; color:#fff; text-align:center}
+.foot_up{ background:#f9f9f9; padding: 60px 0; overflow:hidden}
+ul.foot_up_fl{ width: calc(100% - 200px);}
+.foot_up_fl li{ width:25%}
+.foot_up_fl li h2{ font-size:20px; line-height:40px; padding-bottom:13px;}
+.foot_up_fl li a{ display:block; line-height:47px; font-size:18px;}
+.nav{ padding-left:64px;}
+.nav li a{ display:block; line-height:68px; font-size:18px; padding:0 36px;}
+.nav li a:hover,.nav li a.on{ color:#42b7f6;}
+.bar-login{ line-height:68px; font-size:18px;}
+.bar-login a{ font-size:18px; padding:0 20px}
+
+
+/*公共样式*/
+.tit{ padding:30px 0;}
+.tit h2{ line-height:40px; font-size:24px; color:#05a9f2; text-indent:70px;}
+.tit-jylc{ background:url(../images/tit-jylc.png) 17px center no-repeat}
+.tit-zxxm{ background:url(../images/tit-zxxm.png) 17px center no-repeat}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

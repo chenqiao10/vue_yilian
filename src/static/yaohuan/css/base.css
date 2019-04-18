@@ -1,0 +1,39 @@
+body, ul,ol,li,p{
+	margin: 0;
+	padding: 0;	
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: 0 none;   /*清除ie6默认图片边框*/
+	vertical-align: middle;   /*清除图片默认底部缝隙*/
+		}
+input,textarea {
+	outline: none;   /*清除默认轮廓线*/
+	border: 0 none;   /*清除默认边框*/
+		}
+/*版心*/
+.w {
+	width: 1280px;
+	margin: 0 auto;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
