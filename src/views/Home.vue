@@ -12,7 +12,7 @@
           </ul>
         </div>
         <div class="bar-login fr">
-          <router-link to="/regist">登录</router-link><a href="#">注册</a>
+          <router-link to="/regist">注册</router-link><router-link to="/">登录</router-link>
         </div>
 
       </div>
@@ -21,8 +21,8 @@
       <div class="content">
         <div class="top-img fl"><img src="../static/hanxu/images/top-img.png" width="186" height="92"></div>
         <div class="search fl">
-          <input name="" type="text" placeholder="热门搜索：APP 小程序">
-          <input name="" type="submit" value="搜索">
+          <input name="" type="text" placeholder="热门搜索：APP 小程序" v-model="serchMsg">
+          <input name="" type="submit" value="搜索" >
         </div>
         <div class="Release_btn fr"><a href="#">发布任务</a></div>
       </div>
@@ -167,10 +167,17 @@ export default {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
       }),
-      projects : []
+      projects : [],
+      serachMsg : ''
     }
   },
   methods:{
+    reSerach(){
+      this.$axios.post('/api/project/projectTable',{title:this.serachMsg})
+        .then(data => {
+          this.$router.push({name:'/',params: data.data.projectTable}) // 页面路由到项目大厅页面，传递项目列表参数
+        })
+    }
 
   },
   created () {
@@ -179,6 +186,7 @@ export default {
         console.log(data)
         this.projects = data.data.projectTable
       })
+
   }
 }
 </script>
