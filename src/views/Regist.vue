@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="footer">
-      <p class="copy">Copyright©2018,吉林省易捷网络科技有限公司</p>
+      <p class="copy">Copyright 2018 - 2019 https://www.yilianyl.com 吉ICP备12345678号</p>
     </div>
 
   </div>
@@ -53,6 +53,8 @@
         noteCode : '',
         password : '',
         inviteUUid : '',
+        noteRel:'',
+        imgRel:'',
         content: '获取验证码',  // 按钮里显示的内容
         totalTime: 60      //记录具体倒计时时间
       }
@@ -61,7 +63,7 @@
       imgRev(){
         this.$axios.get('/rev/kaptchaExist?existCode='+this.imgCode)
           .then(data => {
-            alert(data.data.code)
+            this.imgRel = data.data.code; // 存在样式改动添加，if判定
           })
       },
       noteReq(){
@@ -70,7 +72,7 @@
             alert(data.data.code)
             $("#phoneReq").attr('disabled',true)
             document.getElementById('phoneReq').style.cursor = 'not-allowed'
-            this.content = this.totalTime + 's后重新发送'      //这里解决60秒不见了的问题
+            this.content = this.totalTime + 's后重新发送'      //60秒开始显示
             let clock = window.setInterval(() => {
               this.totalTime--
               this.content = this.totalTime + 's后重新发送'
@@ -87,8 +89,22 @@
       noteRev(){
         this.$axios.get('/rev/rev/noteRev?num='+this.num+'&rev='+this.noteCode)
           .then(data => {
-            alert(data.data.code)
+            this.noteRel = data.data.code
           })
+      },
+      register(){
+        if(this.noteRel === 1 && this.imgRel === 1){
+          this.$axios.post('/api/userHandle/userRegistForOwn',{num:this.num,password:this.password,inviteUUid:this.inviteUUid})
+            .then(data => {
+              if(data.data.code === 1){
+                this.$router.push({name:'/'})
+              }else{
+                alert('注册失败') // 需修改
+              }
+            })
+        }else{
+          alert('注册失败') // 需修改
+        }
       }
     }
   }
